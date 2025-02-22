@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic application</title>
+  </head>
+  <body>
+    <button onclick="change_text()">GO BACK</button>
+    <button id="myContainer">Change background color</button>
+    <button onclick="alert('hello world')">Hello world</button>
+    <button id="click">internal js click</button>
+    <p id="text">this is the first html,css and javascript</p>
+    <button
+      onclick="document.getElementById('text').innerHTML ='this is the second fusion'"
+    >
+      Change text
+    
+    <script>
+      /**function greet(){
+            alert('welcome to my dynamic application');
+        }*/
+      document.getElementById("click").onclick = function () {
+        alert("button was clicked");
+      };
+
+      /**document.getElementById('click').onmouseover = function(){
+            button;
+        }*/
+    </script>
+    <script src="./actions/actions.js"></script>
+  </body>
+</html>
